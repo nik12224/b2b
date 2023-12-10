@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 53px;
+    margin-bottom: 45px;
+}
+
+.form__selects {
+    display: flex;
+    column-gap: 13px;
+}
+
+.form__buttons {
+    display: flex;
+    column-gap: 12px;
+}
