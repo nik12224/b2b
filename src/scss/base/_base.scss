@@ -3,7 +3,50 @@ html {
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
     font-family: var(--font-main);
+}
+
+.our-works__block {
+    padding: 56px 47px 54px 133px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-works__title {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.our-works__inner {
+    display: grid;
+    grid-template-columns: 768px 768px;
+    gap: 48px;
+}
+
+.our-works__sublock {
+    display: none;
+}
+
+.our-works__subtitle {
+    margin-bottom: 16px;
+}
+
+.our-works__text {
+    margin-bottom: 48px;
+}
+
+.our-works__list {
+    display: flex;
+    column-gap: 58px;
+    margin-bottom: 16px;
+}
+
+.our-works__subtext {
+    display: block;
+    margin-bottom: 46px;
+}
+
+.our-works__buttons {
+    display: flex;
+    column-gap: 16px;
 }

@@ -1,0 +1,34 @@
+.promo {
+    background-image: url("../img/background_promo.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.promo__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+    padding-top: 162px;
+    padding-bottom: 139px;
+    color: #ffffff;
+}
+
+.promo__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+
+    &--gap {
+        row-gap: initial;
+    }
+}
+
+.promo__blocks {
+    position: absolute;
+    display: none;
+}
+
+.promo__item {
+    display: flex;
+}

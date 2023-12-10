@@ -1,0 +1,26 @@
+.advantages {
+    margin-bottom: 114px;
+}
+
+.advantages__kitchen {
+    display: none;
+}
+
+.advantages__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.advantages__title {
+    text-align: left;
+}
+
+.advantages__list {
+    display: flex;
+    column-gap: 74px;
+}
+
+.advantages__item {
+    display: flex;
+}
