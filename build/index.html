@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Стартовый шаблон</title>
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Playfair+Display+SC:wght@700&family=Roboto+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="promo">
@@ -41,7 +44,7 @@
             <div class="header__block header__block--right">
                 <div class="header__inner">
                     <b>Производство кухонь на заказ </b>
-                    <p>Анапа, ул. Крылова, д. 27</p>
+                    <p class="header__text">Анапа, ул. Крылова, д. 27</p>
                 </div>
                 <div class="header__inner header__inner--gap">
                     <div class="header__item">
@@ -67,9 +70,9 @@
                             </clipPath>
                             </defs>
                         </svg>  
-                        <p>+7 (988)-311-77-88</p>
+                        <p class="header__number">+7 (988)-311-77-88</p>
                     </div>
-                    <a class="button">Заказать звонок</a>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -91,9 +94,9 @@
 
 
     <div class="container">
-        <div class="promo__text">
+        <div class="promo__block-text">
             <div class="promo__inner">
-                <b>Изготовим роскошную дизайнерскую кухню</b>
+                <b class="promo__title">Изготовим роскошную <br> дизайнерскую кухню</b>
                 <div class="promo__item">
                     <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_730)">
@@ -104,58 +107,62 @@
                         <rect width="70" height="70" fill="white"/>
                         </clipPath>
                         </defs>
-                    </svg>                        
-                    <em>Цена на 12-24% ниже,</em>
-                    <p>чем у посредников</p>
+                    </svg>  
+                    <div>                      
+                        <p>Цена на 12-24% ниже,</p> 
+                        <p class="promo__text">чем у посредников</p>
+                    </div>
                 </div>
             </div>
             <div class="promo__inner promo__inner--gap">
                 <span>Рассчитаем стоимость кухни-мечты</span>
-                <a class="button">Заказать расчёт</a>
-                <img src="../img/icons/arrow.png" width="64" height="64" alt="">
+                <a class="button button__promo">Заказать расчёт</a>
+                <img class="promo__arrow" src="../img/icons/arrow.png" width="34" height="64" alt="">
             </div>
-            <div class="promo__blocks">
-                <p>Огромный выбор бытовой техники</p>
-                <span>Точка.</span>
+            <div class="promo__blocks promo__blocks--top">
+                <p>Огромный выбор <br> бытовой техники</p>
             </div>
-            <div class="promo__blocks">
-                <p>Изысканный гарнитур любого размера</p>
-                <span>Точка.</span>
+            <div class="promo__blocks promo__blocks--right">
+                <p>Изысканный гарнитур <br> любого размера</p>
             </div>
-            <div class="promo__blocks">
-                <p>Выдающиеся сорта древесины</p>
-                <span>Точка.</span>
+            <div class="promo__blocks promo__blocks--bottom">
+                <p>Выдающиеся <br> сорта древесины</p>
             </div>
         </div>
     </div>
 </div>
 		<section class="advantages">
-    <div class="container">
+
+    <div class="advantages__block">
         <div class="advantages__kitchen">
             <img src="../img/kitchen.png" alt="">
         </div>
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <div class="advantages__line"></div>
+    </div>
+    <div class="container">
+
         <div class="advantages__inner">
-            <h2 class="advantages__title">Наши преимущества</h2>
             <div class="advantages__list">
                 <div class="advantages__item">
                     <img src="../img/icons/kitchen.png" width="70" height="70" alt="Кухня.">
                     <div>
                         <b>C 2000 г на рынке </b>
-                        <p>наши кухни выбрали 10 000+ семей</p>
+                        <p class="advantages__text">наши кухни выбрали 10 000+ семей</p>
                     </div>
                 </div>
                 <div class="advantages__item">
                     <img src="../img/icons/calendar.png" width="70" height="70" alt="Сроки.">
                     <div>
                         <b>Сжатые сроки </b>
-                        <p>изготовление кухни от 20 дней </p>
+                        <p class="advantages__text">изготовление кухни от 20 дней </p>
                     </div>
                 </div>
                 <div class="advantages__item">
                     <img src="../img/icons/measurement.png" width="70" height="70" alt="Измерение">
                     <div>
                         <b>C 2000 г на рынке </b>
-                        <p>наши кухни выбрали 10 000+ семей</p>
+                        <p class="advantages__text">наши кухни выбрали 10 000+ семей</p>
                     </div>
                 </div>
             </div>
@@ -168,6 +175,7 @@
 				<form class="form" action="post" method="get">
 					<div class="form__selects">
 						<select class="form__select" aria-label="пЛАНИРОВКА">
+							<option value="">Планировка</option>
 							<option value="">Прямые100</option>
 							<option value="">Угловые134</option>
 							<option value="">С островом250</option>
@@ -175,12 +183,14 @@
 							<option value="">П-образные170</option>
 						</select>
 						<select class="form__select" aria-label="сТИЛЬ КУХНИ">
+							<option value="">Стиль кухни</option>
 							<option value="">Прованс</option>
 							<option value="">Классика</option>
 							<option value="">Модерн</option>
 							<option value="">Кантри</option>
 						</select>
-						<select class="form__select" aria-label="цВЕТ">
+						<select class="form__select form__select--width" aria-label="цВЕТ">
+							<option value="">Цвет</option>
 							<option value="">Белый</option>
 							<option value="">Черный</option>
 							<option value="">Бежевый</option>
@@ -188,8 +198,8 @@
 						</select>
 					</div>
 					<div class="form__buttons">
-						<button class="button">применить</button>
-						<button class="button">сбросить</button>
+						<button class="button button__form-apply">применить</button>
+						<button class="button button__form-reset">сбросить</button>
 					</div>
 				</form>
 				<div class="our-works__inner">

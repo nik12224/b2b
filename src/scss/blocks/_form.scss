@@ -10,6 +10,28 @@
     column-gap: 13px;
 }
 
+.form__select {
+    padding: 18px 65px 18px 32px;
+    font: inherit;
+    color: #002B45;
+    font-family: "Open Sans";
+    font-weight: normal;
+    background-color: #fff;
+    border: 1px solid #002B45;
+    background-image: url("../img/icons/select_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 32px center;
+    appearance: none;
+    text-transform: uppercase;
+    max-width: 207px;
+    width: 100%;
+
+    &--width {
+        max-width: 137px;
+        width: 100%;
+    }
+}
+
 .form__buttons {
     display: flex;
     column-gap: 12px;

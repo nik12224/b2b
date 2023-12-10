@@ -7,11 +7,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		font-family: "Open Sans";
 	}
 }
 
 .header__block {
 	display: flex;
+	align-items: center;
 
 	&--right {
 		column-gap: 73px;
@@ -23,12 +25,29 @@
 }
 
 .header__inner {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 25px;
+	
 	&--gap {
 		display: flex;
+		align-items: center;
 		column-gap: 20px;
 	}
 }
 
+.header__text {
+	font-weight: 400;
+}
+
+.header__number {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+}
+
 .header__item {
 	display: flex;
+	align-items: center;
+	column-gap: 17px;
 }

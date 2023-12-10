@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Стартовый шаблон</title>
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Playfair+Display+SC:wght@700&family=Roboto+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		@@include('blocks/promo.html')
@@ -16,6 +19,7 @@
 				<form class="form" action="post" method="get">
 					<div class="form__selects">
 						<select class="form__select" aria-label="пЛАНИРОВКА">
+							<option value="">Планировка</option>
 							<option value="">Прямые100</option>
 							<option value="">Угловые134</option>
 							<option value="">С островом250</option>
@@ -23,12 +27,14 @@
 							<option value="">П-образные170</option>
 						</select>
 						<select class="form__select" aria-label="сТИЛЬ КУХНИ">
+							<option value="">Стиль кухни</option>
 							<option value="">Прованс</option>
 							<option value="">Классика</option>
 							<option value="">Модерн</option>
 							<option value="">Кантри</option>
 						</select>
-						<select class="form__select" aria-label="цВЕТ">
+						<select class="form__select form__select--width" aria-label="цВЕТ">
+							<option value="">Цвет</option>
 							<option value="">Белый</option>
 							<option value="">Черный</option>
 							<option value="">Бежевый</option>
@@ -36,8 +42,8 @@
 						</select>
 					</div>
 					<div class="form__buttons">
-						<button class="button">применить</button>
-						<button class="button">сбросить</button>
+						<button class="button button__form-apply">применить</button>
+						<button class="button button__form-reset">сбросить</button>
 					</div>
 				</form>
 				<div class="our-works__inner">

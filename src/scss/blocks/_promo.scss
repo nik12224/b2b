@@ -1,34 +1,97 @@
 .promo {
     background-image: url("../img/background_promo.jpg");
     background-repeat: no-repeat;
-    height: 100vh;
-    flex-shrink: 0;
+    height: 100%;
+    margin-bottom: 90px;
 }
 
-.promo__text {
+.promo__title {
+    font-family: "Lora";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.promo__block-text{
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 56px;
     padding-top: 162px;
     padding-bottom: 139px;
     color: #ffffff;
+    max-width: 730px;
 }
 
 .promo__inner {
     display: flex;
     flex-direction: column;
     row-gap: 48px;
+    position: relative;
 
     &--gap {
         row-gap: initial;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
     }
 }
 
 .promo__blocks {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
     position: absolute;
-    display: none;
+    border-radius: 15px;
+    background: rgba(0, 43, 69, 0.90);
+    backdrop-filter: blur(2px);
+    padding: 18px 32px;
+
+    &--top {
+        top: 53px;
+        right: 93px;
+    }
+
+    &--right {
+        top: 203px;
+        right: -360px;
+    }
+
+    &--bottom {
+        top: 403px;
+        right: -220px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 25px;
+        z-index: 9999;
+        background-image: url("../img/icons/point.png");
+        background-repeat: no-repeat;
+        width: 31px;
+        height: 31px;
+    }
 }
 
 .promo__item {
     display: flex;
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    column-gap: 31px;
+}
+
+.promo__text {
+    font-weight: 400;
+    line-height: normal;
+}
+
+.promo__arrow {
+    position: absolute;
+    right: 447px;
+    top: 10px;
 }
