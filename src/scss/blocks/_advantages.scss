@@ -1,12 +1,15 @@
 .advantages {
     position: relative;
-    margin-bottom: 114px;
+    margin-bottom: 165px;
+    background-color: #FBF6EF;
+    padding-top: 101px;
+    padding-bottom: 97px;
 }
 
 .advantages__kitchen {
     position: absolute;
     left: 0;
-    top: -150px;
+    top: -40px;
 }
 
 .advantages__inner {
@@ -41,7 +44,9 @@
 
 .advantages__list {
     display: flex;
-    column-gap: 74px;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 85px;
 }
 
 .advantages__item {
@@ -52,7 +57,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
-    max-width: 364px;
+    max-width: 360px;
     width: 100%;
 }
 

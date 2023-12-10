@@ -9,6 +9,8 @@
     font-size: 16px;
     padding: 18px 32px;
     margin-top: 15px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .button__form-apply {
@@ -21,4 +23,53 @@
     font-size: 16px;
     padding: 18px 32px;
     border: 1px solid #000;
+}
+
+.button__detail {
+    padding: 18px 32px;
+    color: #FBF6EF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #002B45;
+    max-width: 160px;
+    width: 100%;
+
+    &:hover {
+        background: #015B91;
+        transition: all 0.4s;
+    }
+
+    &:active {
+        background: #011A2A;
+        transition: all 0.4s;
+    }
+}
+
+.button__calculation {
+    padding: 18px 32px;
+    color: #002B45;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #002B45;
+    max-width: 229px;
+    width: 100%;
+    text-wrap: nowrap;
+
+    &:hover {
+        color: #F2A22E;
+        border: 1px solid #F2A22E;
+        transition: all 0.4s;
+    }
+
+    &:active {
+        color: #011A2A;
+        border: 1px solid #011A2A;
+        transition: all 0.4s;
+    }
 }

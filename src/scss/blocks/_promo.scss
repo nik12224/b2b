@@ -1,8 +1,8 @@
 .promo {
     background-image: url("../img/background_promo.jpg");
     background-repeat: no-repeat;
-    height: 100%;
-    margin-bottom: 90px;
+    background-size: 101%;
+    height: 850px;
 }
 
 .promo__title {
@@ -26,7 +26,7 @@
 .promo__inner {
     display: flex;
     flex-direction: column;
-    row-gap: 48px;
+    row-gap: 35px;
     position: relative;
 
     &--gap {
@@ -50,12 +50,12 @@
 
     &--top {
         top: 53px;
-        right: 93px;
+        right: 115px;
     }
 
     &--right {
         top: 203px;
-        right: -360px;
+        right: -335px;
     }
 
     &--bottom {
